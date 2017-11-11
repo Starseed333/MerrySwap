@@ -336,7 +336,7 @@ h2 {
     width: 100vw;
     z-index: 1;
     background: none;
-  /*  opacity: 0.65;*/
+    /*  opacity: 0.65;*/
     border: 3px solid red;
 }
 
@@ -348,11 +348,10 @@ h2 {
     margin-top: 130px;
     margin-left: 90px;
     padding: 5px;
-    height: 900px;
-    width: 300px;
+    height: 300px;
+    width: 200px;
     background: rgb(185, 16, 16);
     float: left;
-    
 }
 
 .mid-slider {
@@ -363,8 +362,6 @@ h2 {
     margin-top: 130px;
     margin-left: 500px;
 }
-
-
 
 .section {
     padding: 20px 0;
@@ -490,3 +487,4 @@ h2 {
         font-size: 75%;
     }
 }
+

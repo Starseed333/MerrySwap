@@ -1,0 +1,71 @@
+#section-a {
+    padding: 30;
+    height: 800px;
+    width: 100%
+}
+
+.uploader-container {
+    padding: 50px;
+    width: 1500px;
+    height: 600px;
+    background: transparent;
+}
+
+.drop-container {
+    background-color: transparent;
+}
+
+#drop-area {
+    padding: 50px;
+    height: 280px;
+    width: 420px;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-image: url('drop-image.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.drop-container {
+    padding: 30px;
+    height: 370px;
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background: rgb(94, 94, 250);
+}
+
+#files-upload {
+    margin-top: 110px;
+    margin-left: 110px;
+    padding: 0px;
+    width: 200px;
+    height: 20px;
+    background: yellow;
+}
+
+#file-list {
+    padding: 10px;
+    height: 100px;
+    background: green;
+}
+
+#stage-area {
+    padding: 10px;
+    width: 600px;
+    margin-top: -390px;
+    margin-left: 700px;
+    background: transparent;
+}
+
+#file-list {
+    padding: 10px;
+    width: 400px;
+    margin-left: 100px;
+    background: rgb(70, 66, 58);
+}
+
+.no-items {
+    margin-left: 100px;
+    background: pink;
+}
