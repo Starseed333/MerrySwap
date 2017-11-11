@@ -344,14 +344,23 @@ h2 {
     background: green;
 }
 
-.side-buttons {
+.top-slider {
+    margin-top: 130px;
+    margin-left: 90px;
+    padding: 5px;
+    height: 400px;
+    width: 1000px;
+    background: rgb(185, 16, 16);
+    float: left;
+}
+
+.bottom-slider {
     margin-top: 130px;
     margin-left: 90px;
     padding: 5px;
     height: 300px;
-    width: 200px;
+    width: 700px;
     background: rgb(185, 16, 16);
-    float: left;
 }
 
 .mid-slider {
@@ -488,3 +497,5 @@ h2 {
     }
 }
 
+
+/*======upload zone=========*/
