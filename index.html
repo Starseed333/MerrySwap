@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merry Swap</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/upload.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/split.css">
+
+</head>
+
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+
+
+        <!-- top nav -->
+        <nav class="navbar navbar-top hidden-xs">
+            <div class="container">
+
+
+                <!-- left nav top -->
+                <ul class="nav navbar-nav pull-left">
+                    <li>
+                        <a href="#">
+                            <span class=""></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class=""></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-pushpin text-white"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-white">Your Friendly Gift
+                                <b>Swap Site</b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <!-- right nav top -->
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="#" class="text-white">Log In</a>
+                    </li>
+                    <li>
+                        <!--<button class="asText"  id="doSmth">Register</button>-->
+                        <a href="#" class="text-white" data-toggle="modal" data-target="#loginModal">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dividline light-grey"></div>
+        </nav>
+        <!-- down nav -->
+        <nav class="navbar navbar-down">
+            <div class="container">
+                <div class="flex-container">
+                    <div class="navbar-header flex-item">
+                        <div class="navbar-brand" href="#">Merry Swap</div>
+                    </div>
+                    <ul class="nav navbar-nav flex-item hidden-xs">
+                        <li class="listItem">
+                            <a href="#" style="font-size: 25px;">Post Item</a>
+                        </li>
+                        <li>
+                            <a href="#" style="font-size: 25px;">Search Item</a>
+                        </li>
+                        <li>
+                            <a href="#" style="font-size: 25px;">Make Offer</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+                        <li>
+                            <a href="#" class="">About Us</a>
+                        </li>
+                    </ul>
+                    <!-- dropdown only moblie -->
+                    <div class="dropdown visible-xs pull-right">
+                        <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">TheTeam</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!--End of Nav-->
+
+    <!-- Nav Background -->
+
+    <div class="nav-background">
+        <div class="container">
+
+        </div>
+    </div>
+    <!--End nav-background-->
+
+
+    <!--Drop Down-------------------------------------------------------->
+    <div class="drop">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <br />
+                    <div class="dropdown">
+
+                        <ul>
+                            <li>
+                                <a>HOME</a>
+                            </li>
+
+                            <li>
+                                <a>Toys</a>
+                                <ul>
+                                    <li>
+                                        <a>Age 5+</a>
+                                    </li>
+                                    <li>
+                                        <a>Legos</a>
+                                    </li>
+                                    <li>
+                                        <a>Action Figures</a>
+                                    </li>
+                                    <li>
+                                        <a>Power Wheels</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Pets</a>
+                                <ul>
+                                    <li>
+                                        <a>Dogs</a>
+                                    </li>
+                                    <li>
+                                        <a>Cats</a>
+                                    </li>
+                                    <li>
+                                        <a>Monkeys</a>
+                                    </li>
+                                    <li>
+                                        <a>Donkeys</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Electronics</a>
+                                <ul>
+                                    <li>
+                                        <a>TVs</a>
+                                    </li>
+                                    <li>
+                                        <a>Computers</a>
+                                    </li>
+                                    <li>
+                                        <a>Ipods</a>
+                                    </li>
+                                    <li>
+                                        <a>Game System</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Clothes</a>
+                                <ul>
+                                    <li>
+                                        <a>Mens</a>
+                                    </li>
+                                    <li>
+                                        <a>Womens</a>
+                                    </li>
+                                    <li>
+                                        <a>Kids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Drop Down-->
+    <!--================================VIDEO HD BACKGROUND YEAH!!==========================================================================-->
+    <header class="jumbotron">
+        <section>
+            <div class="fullscreen-video-wrap">
+
+                <video src="video4.mov" autoplay="true" loop="true">
+                </video>
+            </div>
+
+            <div class="jumbo-overlay">
+                <div class="side-buttons">
+
+                    <!-------------slider slider slider slider -------------------------------------------------------->
+
+
+                </div>
+
+
+
+
+
+
+
+                <!----<section class="section section-c">
+                    <div class="container">
+                        <h2>Section A</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores
+                            blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium,
+                            ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus
+                            neque eligendi facere soluta dolor ducimus!</p>
+                    </div>
+                </section>-->
+
+
+        </section>
+    </header>
+
+    <section id="section section-a">
+        <div class="uploader-container">
+            <div class="drop-container">
+
+
+
+                <div id="drop-area">
+
+                    <span class="drop-instructions"></span>
+
+                    <span class="drop-over">Drop files here!</span>
+
+
+                    <div class="choose-file">
+                        <h3></h3>
+
+                        <p>
+                            <input id="files-upload" type="file" multiple>
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div id="stage-area">
+                <ul id="file-list">
+
+                    <li class="no-items">(no files uploaded yet)</li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--========================================================================================================-->
+
+
+    <section class="section section-b">
+        <div class="split-container">
+            <section id="wrapper" class="skewed">
+                <div class="layer bottom">
+                    <div class="content-wrap">
+                        <div class="content-body">
+                            <h1>Upside Down</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam temporibus dolore vero
+                                reiciendis atque debitis. Sequi at consequatur deserunt?</p>
+                        </div>
+                        <img src="http://www.traversymedia.com/downloads/assets/image1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="layer top">
+                    <div class="content-wrap">
+                        <div class="content-body">
+                            <h1>Turn That Frown</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam temporibus dolore vero
+                                reiciendis atque debitis. Sequi at consequatur deserunt?</p>
+                        </div>
+                        <img src="http://www.traversymedia.com/downloads/assets/image2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="handle"></div>
+        </div>
+        </section>
+
+        <!--================================================================================================================================-->
+
+
+
+        <section class="section section-b">
+            <div class="container">
+                <h2>Section B</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et
+                    maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod
+                    quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione
+                    reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+            </div>
+        </section>
+
+
+
+
+        <!-- Contact Block -->
+        <section id="contact" class="contact-section h-100 bg-dark" style="background-image: url('assets/green_vector.jpg')">
+            <div id="map" class="bg-overlay">
+                <!--<div style="background-image: url(assets/green_vector.jpg); height: 100px; width: 100px;">-->
+                <div class="container py-5">
+                    <div class="col-lg-8 col-md-6 col-sm-10 form-sec bg-white my-5 p-5 mx-auto">
+                        <form>
+                            <h2 class="mb-4">Contact Us!</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!--Full Name-->
+                                        <label class="sr-only" "fullName" for="formGroupExampleInput"></label>
+                                        <input class="form-control" id="formGroupExampleInput" placeholder="Full Name" onfocus="this.placeholder=''" onblur="this.placeholder='Full Name'"
+                                            type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!--Phone Number-->
+                                        <label class="sr-only" "phoneNumber" for="formGroupExampleInput2"></label>
+                                        <input class="form-control" id="formGroupExampleInput2" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder='Phone Number'"
+                                            type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!--Email Address-->
+                                        <label class="sr-only" "emailAddress" for="formGroupExampleInput2"></label>
+                                        <input class="form-control" id="formGroupExampleInput2" placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!--Address-->
+                                        <label class="sr-only" "address" for="formGroupExampleInput2"></label>
+                                        <input class="form-control" id="formGroupExampleInput2" placeholder="Enter Address" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Address'"
+                                            type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group message1">
+                                        <!--Message-->
+                                        <label class="sr-only" for="formGroupExampleInput2"></label>
+                                        <textarea class="form-control" placeholder="Enter your message here!" rows="4" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your message here!'"></textarea>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <button class="btn btn-primary btn-capsul px-4" style="height:30px; width:60px">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <script>
+  //toggle class scroll $(window).scroll(function() { if($(this).scrollTop() > 50) { $('.navbar-trans').addClass('afterscroll');
+//} else { $('.navbar-trans').removeClass('afterscroll'); } });
+        </script>
+
+
+
+</body>
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>Headquarters in
+                        <br>Dallas, TX</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>About Merry Swap</h3>
+                    <p>
+                        <a href="http://merryswap.com">Merry Swap</a> is free to use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Merry Swap 2017
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--jQuery-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<!--My script-->
+<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="uploader.js"></script>
+<script type="text/javascript" src="split.js"></script>
+
+
+</html>
