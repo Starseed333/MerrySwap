@@ -1,0 +1,81 @@
+.unordered {
+    list-style-type: none;
+    margin-left: 30px;
+    margin-right: -100px;
+    margin: 15px;
+    padding: 20px;
+    width: 360px;
+    height: 600px;
+    float: left;
+    overflow: hidden;
+    background-color: rgb(160, 50, 23);
+    display: inline-block;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.li-about {
+    float: left;
+}
+
+.ipsum{
+    padding:30px;
+    width: 1200px;
+}
+.team-container {
+    padding: 50px;
+    display: inline-block;
+    margin-right: -100px;
+    /* width: 1500px; */
+    height: 100%;
+    /* float: left; */
+    margin-left: 150px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -90px;
+    margin-right: 50px;
+    margin-top: 10px
+}
+
+.about-us {
+    background: rgba(238, 97, 62, 0.61);
+}
+
+.about-container {
+    padding: 30px;
+    width: 1500px;
+    margin-left: 220px;
+    font-size: 20px;
+}
+
+.text-now{
+    font-size: 15px;
+    padding:5px;
+    width: 300px;
+    margin-right: 00px;
+    margin-left: -100px;
+    float: none;
+}
+
+/* .text-center2 {
+    margin-right: 200px;
+} */
+.sandra {
+    margin-right: 0px;
+    margin-left: -40px;
+}
+.yonna{
+    margin-left: -40px;
+}
+.aaron{
+    margin-left: -40px;
+}
+.ismael{
+    margin-left: -40px;
+}
+

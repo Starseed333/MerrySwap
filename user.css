@@ -99,8 +99,9 @@
     background: red;
 }
 
-.seperate{
-    padding: 20px;
+.section-b {
+    background: #333;
     width: 100%;
-    background: yellow;
+    color: #fff;
+    height: 800px;
 }
