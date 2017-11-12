@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merry Swap</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/upload.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/split.css">
+    <link rel="stylesheet" type="text/css" href="assets/about.css">
+
+
+    <style type="text/css">
+        @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+
+
+
+
+
+
+
+.col-lg-9 {
+    color: white;
+}
+
+        .col-item {
+            border: 1px solid #E1E1E1;
+            border-radius: 5px;
+            background: #FFF;
+        }
+
+        .col-item .photo img {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .col-item .info {
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            margin-top: 1px;
+        }
+
+        .col-item:hover .info {
+            background-color: #F5F5DC;
+        }
+
+        .col-item .price {
+            /*width: 50%;*/
+            float: left;
+            margin-top: 5px;
+        }
+
+        .col-item .price h5 {
+            line-height: 20px;
+            margin: 0;
+        }
+
+        .price-text-color {
+            color: #219FD1;
+        }
+
+        .col-item .info .rating {
+            color: #777;
+        }
+
+        .col-item .rating {
+            /*width: 50%;*/
+            float: left;
+            font-size: 17px;
+            text-align: right;
+            line-height: 52px;
+            margin-bottom: 10px;
+            height: 52px;
+        }
+
+        .col-item .separator {
+            border-top: 1px solid #E1E1E1;
+        }
+
+        .clear-left {
+            clear: left;
+        }
+
+        .col-item .separator p {
+            line-height: 20px;
+            margin-bottom: 0;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .col-item .separator p i {
+            margin-right: 5px;
+        }
+
+        .col-item .btn-add {
+            width: 50%;
+            float: left;
+        }
+
+        .col-item .btn-add {
+            border-right: 1px solid #E1E1E1;
+        }
+
+        .col-item .btn-details {
+            width: 50%;
+            float: left;
+            padding-left: 10px;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        [data-slide="prev"] {
+            margin-right: 10px;
+        }
+
+        .carousel-container {
+            padding: 30px;
+            width: 100%;
+            height: 400px;
+            background: blue;
+        }
+
+.container2{
+    padding: 50px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    background: rgb(145, 68, 78);
+}
+.section-c{
+    background: black;
+    }
+
+
+
+        /* .top-slider {
+    margin-top: 130px;
+    margin-left: -100px;
+    margin-right: 200px;
+    padding: 5px;
+    height: 400px;
+    width: 1500px;
+    background: rgb(185, 16, 16); */
+    </style>
+
+</head>
+
+
+<body data-spy="scroll" data-target="#navbar-collapsible">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top" style="background: black;">
+
+
+        <!-- top nav -->
+        <nav class="navbar navbar-top hidden-xs" style="background: black;">
+            <div class="container">
+
+
+                <!-- left nav top -->
+                <ul class="nav navbar-nav pull-left">
+                    <li>
+                        <a href="#">
+                            <span class=""></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class=""></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-pushpin text-white"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-white">Your Friendly Gift
+                                <b>Swap Site</b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <!-- right nav top -->
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="#" class="text-white">Log In</a>
+                    </li>
+                    <li>
+                        <!--<button class="asText"  id="doSmth">Register</button>-->
+                        <a href="#" class="text-white" data-toggle="modal" data-target="#loginModal">Register</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dividline light-grey"></div>
+        </nav>
+        <!-- down nav -->
+        <nav class="navbar navbar-down">
+            <div class="container" style="background: black;">
+                <div class="flex-container">
+                    <div class="navbar-header flex-item">
+                        <div class="navbar-brand" href="#">Merry Swap</div>
+                    </div>
+                    <ul class="nav navbar-nav flex-item hidden-xs">
+                        <li class="listItem">
+                            <a href="#post" style="font-size: 25px;">Post Item</a>
+                        </li>
+                        <li>
+                            <a href="#search" style="font-size: 25px;">Search Item</a>
+                        </li>
+                        <li>
+                            <a href="#about" style="font-size: 25px;">About Us</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+                        <li>
+                            <a href="#contact" class="">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- dropdown only moblie -->
+                    <div class="dropdown visible-xs pull-right">
+                        <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">TheTeam</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#contact">Contact Us</a>
+                                <li>
+
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!--End of Nav-->
+
+    <!-- Nav Background -->
+
+    <div class="nav-background" style="background: rgb(145, 68, 78);" >
+        <div class="container">
+
+        </div>
+    </div>
+    <!--End nav-background-->
+
+
+    <!--Drop Down=============================================================================-->
+    <div class="drop" style="background: rgb(145, 68, 78);">
+        <div class="container" style="background: rgb(145, 68, 78);">
+            <div class="row">
+                <div class="col-xs-12">
+                    <br />
+                    <div class="dropdown" style="background: rgb(145, 68, 78);">
+
+                        <ul>
+                            <li>
+                                <a>HOME</a>
+                            </li>
+
+                            <li>
+                                <a>Toys</a>
+                                <ul>
+                                    <li>
+                                        <a>Age 5+</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Legos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Action Figures</a>
+                                    </li>
+                                    <li>
+                                        <a>Power Wheels</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Pets</a>
+                                <ul>
+                                    <li>
+                                        <a>Dogs</a>
+                                    </li>
+                                    <li>
+                                        <a>Cats</a>
+                                    </li>
+                                    <li>
+                                        <a>Monkeys</a>
+                                    </li>
+                                    <li>
+                                        <a>Donkeys</a>
+                                    </li>
+                                    <li>
+                                        <a>Horses</a>
+                                    </li>
+                                    <li>
+                                        <a>Rats</a>
+                                    </li>
+                                    <li>
+                                        <a>Mice</a>
+                                    </li>
+                                    <li>
+                                        <a>Baby Elephant</a>
+                                    </li>
+                                    <li>
+                                        <a>White Rhinos</a>
+                                    </li>
+                                    <li>
+                                        <a>Unicorns</a>
+                                    </li>
+                                    <li>
+                                        <a>Fairys</a>
+                                    </li>
+                                    <li>
+                                        <a>Cyclops</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Electronics</a>
+                                <ul>
+                                    <li>
+                                        <a>TVs</a>
+                                    </li>
+                                    <li>
+                                        <a>Computers</a>
+                                    </li>
+                                    <li>
+                                        <a>Ipods</a>
+                                    </li>
+                                    <li>
+                                        <a>Game System</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Clothes</a>
+                                <ul>
+                                    <li>
+                                        <a>Mens</a>
+                                    </li>
+                                    <li>
+                                        <a>Womens</a>
+                                    </li>
+                                    <li>
+                                        <a>Kids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Drop Down-->
+    <!--================================VIDEO HD BACKGROUND YEAH!!==========================================================================-->
+    <header class="jumbotron" style="background: rgb(119, 17, 17);">
+        <section id="search-item">
+
+
+
+
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <h1 class="title my-4" style="color: white;">Shop Name</h1>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">Category 1</a>
+                            <a href="#" class="list-group-item">Category 2</a>
+                            <a href="#" class="list-group-item">Category 3</a>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-3 -->
+
+                    <div class="col-lg-9">
+
+                        <div class="card mt-4">
+                            <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Product Name</h3>
+                                <h4>$24.99</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic
+                                    aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium
+                                    animi perspiciatis molestias iure, ducimus!</p>
+                                <span class="text-warning">★ ★ ★ ★ ☆</span>
+                                4.0 stars
+                            </div>
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card card-outline-secondary my-4">
+                            <div class="card-header">
+                                Product Reviews
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore,
+                                    similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat
+                                    laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                                <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore,
+                                    similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat
+                                    laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                                <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore,
+                                    similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat
+                                    laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+                                <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+                                <hr>
+                                <a href="#" class="btn btn-success">Leave a Review</a>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+
+                    </div>
+                    <!-- /.col-lg-9 -->
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </header>
+
+    <!--==========================================slider=============================================================-->
+
+    <section class="section section-c">
+    
+        <div="slider2-container">
+            <div class="col-md-10">
+                <div class="top-slider2">
+    
+    
+                    <div class="container2">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col-md-9">
+    
+                                    <h3>ELECTRONICS</h3>
+                                </div>
+                                <div class="col-md-3">
+                                    <!-- Controls -->
+                                    <div class="controls pull-right hidden-xs">
+                                        <a class="left fa fa-chevron-left btn btn-danger" href="#carousel-example" data-slide="prev"></a>
+                                        <a class="right fa fa-chevron-right btn btn-danger" href="#carousel-example" data-slide="next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Sample Product</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $199.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Product Example</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $249.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Next Sample Product</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $149.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Sample Product</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $199.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Product with Variants</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $199.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Grouped Product</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $249.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Product with Variants</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $149.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="col-item">
+                                                    <div class="photo">
+                                                        <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="price col-md-6">
+                                                                <h5>
+                                                                    Product with Variants</h5>
+                                                                <h5 class="price-text-color">
+                                                                    $199.99</h5>
+                                                            </div>
+                                                            <div class="rating hidden-sm col-md-6">
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="price-text-color fa fa-star"></i>
+                                                                <i class="price-text-color fa fa-star">
+                                                                </i>
+                                                                <i class="fa fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="separator clear-left">
+                                                            <p class="btn-add">
+                                                                <i class="fa fa-exchange"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">Make Offer</a>
+                                                            </p>
+                                                            <p class="btn-details">
+                                                                <i class="fa fa-list"></i>
+                                                                <a href="http://www.merryswap.com" class="hidden-sm">More details</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="clearfix">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+    
+    
+    </section>
+
+        <section>
+            
+        </section>
+      
+
+    <!--=======================================================================================================================================-->
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center" style="background: black;">
+    <div class="footer-above" style="background: black;">
+        <div class="container" style="background: black;">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Location</h3>
+                    <p>Headquarters in
+                        <br>Dallas, TX</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Around the Web</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social btn-outline" href="#">
+                                <i class="fa fa-fw fa-dribbble"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>About Merry Swap</h3>
+                    <p>
+                        <a href="http://merryswap.com">Merry Swap</a> is free to use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Merry Swap 2017
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<!--jQuery-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<!--My script-->
+<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="uploader.js"></script>
+<script type="text/javascript" src="split.js"></script>
+
+
+</html>
