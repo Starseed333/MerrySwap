@@ -44,11 +44,26 @@
     background: yellow;
 }
 
-#file-list {
-    padding: 10px;
-    height: 100px;
-    background: green;
-}
+    #file-list {
+    /* padding: 10px; */
+    width: 100%;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgb(104, 13, 96);
+    }
+
+    #file-list li {
+        background-color: rgb(126, 126, 126);
+        width: 200px;
+        height: 350px;
+        padding: 15px;
+    }
+
+    #file-list li img {
+        width: 100%;
+        /* height:  */
+    }
 
 #stage-area {
     padding: 10px;
@@ -68,4 +83,7 @@
 .no-items {
     margin-left: 100px;
     background: pink;
+}
+.col-lg-6 {
+    margin-left: 100px;
 }
