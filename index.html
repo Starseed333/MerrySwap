@@ -117,6 +117,9 @@
     [data-slide="prev"] {
         margin-right: 10px;
     }
+    .carousel {
+        padding: 10px;
+    }
 
     /* .top-slider {
     margin-top: 130px;
@@ -369,9 +372,80 @@
             </div>
 
             <div class="jumbo-overlay">
+<!--===============================================================================================================================================-->
+
+<div class="carousel" style="width: 550px; height: 600px; margin-bottom: -130px;">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="slide-content" style="height: 500px;">
+                    <video poster="assets/funny.gif" webkit-playsinline id="bgvid" loop>
+                        <source src="assets/funny.gif" type="video/webm">
+                        <source src="assets/funny.gif" type="video/mp4">
+                    </video>
+                    <div class="slide-overlay door">
+                        <div class='title'></div>
+                        <div class="description">  </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <video poster="assets/funny2.gif" webkit-playsinline id="bgvid" loop>
+                        <source src="assets/funny.gif" type="video/webm">
+                        <source src="assets/funny.gif" type="video/mp4">
+                    </video>
+                    <div class="slide-overlay door">
+                        <div class='title'> </div>
+                        <div class="description"> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="slide-content">
+                    <video poster="assets/funny4.gif" webkit-playsinline id="bgvid" loop>
+                        <source src="assets/funny4.gif" type="video/webm">
+                        <source src="assets/funny4.gif" type="video/mp4">
+                    </video>
+                    <div class="slide-overlay door">
+                        <div class='title'></div>
+                        <div class="description"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control left" style="background: transparent;" href="#carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a class="carousel-control right" style="background: transparent" href="#carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+</div>
 
 
-                <!-------------slider slider slider slider -------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+<!--===================================slider slider slider slider -------------------------------------------------------->
                 <div class="top-slider">
 
 
@@ -380,7 +454,7 @@
                             <div class="row">
                                 <div class="col-md-9">
 
-                                    <h3>Potential Items to Swap</h3>
+                                    <h3 class="gift-ex" style="color: white;">GIFT EXCHANGE ITEMS</h3>
                                 </div>
                                 <div class="col-md-3">
                                     <!-- Controls -->
